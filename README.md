@@ -237,7 +237,7 @@ If after following the setup instructions you encounter any issues, please go to
 - Implement allure reporting for better reporting (e.g. screenshots, videos, etc.)
 - Implement a CI (e.g. Jenkins, GitHub Actions)
 - Revise the project structure
-- Containerise the test suite
+- ~~Containerise the test suite~~
 - Add more edge cases to the test suite
   - Boundary testing
   - Adding an invalid airport to a favourite list
