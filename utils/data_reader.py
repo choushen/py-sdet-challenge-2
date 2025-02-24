@@ -9,15 +9,15 @@ def read_json(file_path: str) -> Dict[str, Any]:
         return json.load(file)
     
 
-def get_checkout_data() -> Dict[str, Any]:
+def get_endpoints() -> Dict[str, Any]:
     """ Get the checkout data from the JSON file """
-    file_path: str = os.path.join(os.path.dirname(os.path.dirname(__file__)), "resources", "checkout_data.json")
+    file_path: str = os.path.join(os.path.dirname(os.path.dirname(__file__)), "resources", "api_endpoints")
     return read_json(file_path)
 
 
-def get_test_validation_data() -> Dict[str, Any]:
+def get_favourites() -> Dict[str, Any]:
     """ Get the test validation data from the JSON file """
-    file_path: str = os.path.join(os.path.dirname(os.path.dirname(__file__)), "resources", "test_validation_data.json")
+    file_path: str = os.path.join(os.path.dirname(os.path.dirname(__file__)), "resources", "favourites.json")
     return read_json(file_path)
 
 
