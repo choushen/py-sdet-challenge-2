@@ -38,11 +38,25 @@ Create an automated test suite for **[Airport Gap API](https://airportgap.com/)*
 
 #### **Identified Test Cases**  
 
-- POST method 
-- POST method validation
-- GET method
-- GET method validation
+- Authentication Tests
+  - [ ] Verify that valid token allows access to the protected endpoints
+  - [ ] Verify that invalid token does not allow access to the protected endpoints returning a 401 status code
+- [ ] Data Validation Tests
+  - [ ] Validate that the airport IATA codes are valid
+  - [ ] Validate that invalid airport IATA codes return 404
+- Distance Calculation Tests
+  - [ ] Verify that the distance calculation is accurate
+- Favourite Management Tests
+  - [ ] Verify that the favourite airports can be added
+  - [ ] Verify that a favourite airport can be removed
+  - [ ] Verify that all favourite airports can be cleared
 
+##### **Non-Functional Tests**
+
+- [ ] Performance Testing
+  - [ ] Verify that the response time is within acceptable limits
+- [ ] Load Testing
+  - [ ] Verify that the system can handle a large number of requests
 
 ### **Assumptions and Justifications**  
 
@@ -76,6 +90,7 @@ Any issues common issues you may encounter/what I encountered and how I resolved
 ...
 
 If after following the setup instructions you encounter any issues, please go to the **[author](#author)** section of this document and reach out to me with any questions you might have.
+
 
 ## **Author**  
 
