@@ -27,8 +27,7 @@ def get_environment_data() -> Dict[str, Any]:
     load_dotenv(os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env"))
     env_dict: Dict[str, Any] = {
         "base_url": os.getenv("BASE_URL"),
-        "username": os.getenv("USERNAME"),
-        "password": os.getenv("PASSWORD")
+        "auth_token": os.getenv("AUTH_TOKEN"),
     }
     return env_dict
 
