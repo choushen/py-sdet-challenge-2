@@ -32,6 +32,11 @@ def get_favourites_data() -> Dict[str, Any]:
     file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "resources", "favourites.json")
     return read_json(file_path)
 
+def get_airport_data() -> Dict[str, Any]:
+    """Get the test validation data from the JSON file."""
+    file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "resources", "airport_data.json")
+    return read_json(file_path)
+
 def get_environment_data() -> Dict[str, Any]:
     """Get environment data from the .env file."""
     env_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env")
