@@ -68,7 +68,7 @@ Create an automated test suite for **[Airport Gap API](https://airportgap.com/)*
 - Test execution is kept separate from the API logic
 - Test data is stored externally
 - Common utilities are under a separate module
-- .evn file is used for environment configuration
+- .env file used for environment management and configuration
 
 ## **Setup Instructions**  
 
