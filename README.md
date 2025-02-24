@@ -211,7 +211,14 @@ open reports/test_report.html
 
 Any issues common issues you may encounter/what I encountered and how I resolved them will be included in this section of the document.
 
-...
+### **Common Troubleshooting Issues & Fixes**  
+
+| **Issue** | **Fix** |
+|-----------|---------|
+| **Reports missing** | `mkdir -p reports`, use **absolute paths** for `-v`. |
+| **`.env` not working** | Pass vars manually with `--env VAR=value`. |
+| **Docker can’t find `pytest`** | Ensure `pytest-html` is in `requirements.txt` and rebuild. |
+| **Report won’t open** | Check inside container with `ls -la /app/reports`. |
 
 If after following the setup instructions you encounter any issues, please go to the **[author](#author)** section of this document and reach out to me with any questions you might have.
 
