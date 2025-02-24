@@ -104,13 +104,14 @@ cd py-sdet-challenge-2
 
 ```
 
-3a. Unzip the **secrets_pt_2.zip** file and place the .env file in the root of the project diretory. Next go to https://airportgap.com/tokens/new and generate yourself a token. Open the .env file that you should have added to the root of the project directory and add the token string to the .env file as shown below:  
+3a. Open the **secrets_pt_2** folder and place the .env file in the root of the project diretory. Next go to https://airportgap.com/tokens/new and generate yourself a token. Open the .env file that you should have added to the root of the project directory and add the token string to the .env file as shown below:  
 
 ```bash
 AUTH_TOKEN=<your_token_here>
 ```
 
 3b. Drop the resources folder into the project directory.  It should contain 3 files:
+
 - airport_data.json
 - api_endpoints.json
 - favourites.json
