@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 def read_json(file_path: str) -> Dict[str, Any]:
     """Read a JSON file and return a dictionary."""
     try:
-        with open(file_path, "r") as file:
+        with open(file_path, "r", encoding="utf-8") as file:
             data = json.load(file)
             logger.info(f"Successfully loaded JSON file: {file_path}")
             return data
