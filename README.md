@@ -38,7 +38,11 @@ Create an automated test suite for **[Airport Gap API](https://airportgap.com/)*
 
 #### **Identified Test Cases**  
 
-...
+- POST method 
+- POST method validation
+- GET method
+- GET method validation
+
 
 ### **Assumptions and Justifications**  
 
@@ -75,4 +79,6 @@ If after following the setup instructions you encounter any issues, please go to
 
 ## **Author**  
 
-Jacob McKenzie  
+**Name:** Jacob McKenzie
+**Email:** jacob.mckenzie@icloud.com
+
