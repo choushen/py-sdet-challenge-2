@@ -91,6 +91,31 @@ Any issues common issues you may encounter/what I encountered and how I resolved
 
 If after following the setup instructions you encounter any issues, please go to the **[author](#author)** section of this document and reach out to me with any questions you might have.
 
+## Future Considerations
+
+### General Improvements
+
+- Comprehensive logging
+- Implementing a test data management system (e.g. Test Database/API)
+- Use pydantic for data validation
+  - Include more logging in the data_reader utility
+- Shorter docstrings for PEP 8 compliance
+- Implement allure reporting for better reporting (e.g. screenshots, videos, etc.)
+- Implement a CI (e.g. Jenkins, GitHub Actions)
+- Revise the project structure
+- Containerise the test suite
+- Add more edge cases to the test suite
+  - Boundary testing
+  - Adding an invalid airport to a favourite list
+  - Token expiration handling (e.g. 401 status code)
+
+### Non-Functional Requirements
+
+- WCAG Compliance (e.g. axe-core)
+- Cross-Browser Testing
+- Device resolution testing
+- Track metrics and check console logs
+- Measure response times to ensure speed and reliability
 
 ## **Author**  
 
