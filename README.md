@@ -50,6 +50,11 @@ Create an automated test suite for **[Airport Gap API](https://airportgap.com/)*
   - [ ] Verify that the favourite airports can be added
   - [ ] Verify that a favourite airport can be removed
   - [ ] Verify that all favourite airports can be cleared
+- JSON Schema Validation Tests
+  - [ ] Verify that the response schema is correct for GET requests
+  - [ ] Verify that the request schema is correct for POST requests
+  - [ ] Verify that the response schema is correct for DELETE requests
+  - [ ] Verify that the response schema is correct for PATCH requests
 
 ##### **Non-Functional Tests**
 
