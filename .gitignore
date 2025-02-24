@@ -21,3 +21,4 @@ reports/
 *.xml
 resources/api_endpoints.json
 resources/favourites.json
+.vscode/settings.json
