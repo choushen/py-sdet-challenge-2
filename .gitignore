@@ -19,3 +19,4 @@ debug.log
 reports/
 *.html
 *.xml
+resources/api_endpoints.json
