@@ -122,6 +122,8 @@ If after following the setup instructions you encounter any issues, please go to
 - Device resolution testing
 - Track metrics and check console logs
 - Measure response times to ensure speed and reliability
+- Jmeter or K6 for load testing
+- Implement a security testing tool (e.g. OWASP ZAP)
 
 ## **Author**  
 
