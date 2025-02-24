@@ -31,10 +31,10 @@ The challenge is to create and containerize a test automation framework for the 
 Create an automated test suite for **[Airport Gap API](https://airportgap.com/)** that includes:  
 
 - [ ] Testing of all endpoints  
-- [ ] Token-based authentication implementation  
-- [ ] Data validation for airport IATA codes  
+- [x] Token-based authentication implementation  
+- [x] Data validation for airport IATA codes  
 - [ ] Distance calculation verification  
-- [ ] Error handling  
+- [x] Error handling  
 
 #### **Identified Test Cases**  
 
@@ -63,16 +63,12 @@ Create an automated test suite for **[Airport Gap API](https://airportgap.com/)*
 - [ ] Load Testing
   - [ ] Verify that the system can handle a large number of requests
 
-### **Assumptions and Justifications**  
-
-...
-
 ### **Design**  
 
-- The test framework will follow a modular structure; more specifically I will use a POM (Page Object Model) design pattern.  
-- Test data will be managed externally to allow for easy updates.  
-- Authentication handling will be implemented for protected endpoints.  
-- Reporting will be integrated for test execution insights.  
+- Test execution is kept separate from the API logic
+- Test data is stored externally
+- Common utilities are under a separate module
+- .evn file is used for environment configuration
 
 ## **Setup Instructions**  
 
@@ -82,11 +78,134 @@ You'll also need a couple of other things installed on your machine. See below f
 
 ### **Prerequisites**  
 
+- VSCode
 - Python 3.13  
 - Pip 25.0  
-- Docker  
-- Docker Compose  
-- Git  
+- Docker
+- Git
+- Secrets Zip File
+
+### **How to run the tests using Docker**
+
+
+1. Clone the repository to your local machine using the following command:  
+
+```bash
+
+git clone
+
+```
+
+2. Navigate to the project directory:  
+
+```bash
+
+cd py-sdet-challenge-2
+
+```
+
+3a. Unzip the **secrets_pt_2.zip** file and place the .env file in the root of the project diretory. Next go to https://airportgap.com/tokens/new and generate yourself a token. Open the .env file that you should have added to the root of the project directory and add the token string to the .env file as shown below:  
+
+```bash
+AUTH_TOKEN=<your_token_here>
+```
+
+3b. Drop the resources folder into the project directory.  It should contain 3 files:
+- airport_data.json
+- api_endpoints.json
+- favourites.json
+
+Once you are set up, you can run the tests using Docker.
+
+4. build the docker image:  
+
+```bash
+docker build -t sdet_challenge .
+```
+
+5. Run the docker container:  
+
+```bash
+docker run --env-file .env -v ${PWD}/reports:/app/reports sdet_challenge pytest --html=reports/test_report.html
+```
+
+6. View the test report:  
+
+#### Windows
+
+```bash
+Start-Process reports\test_report.html
+```
+
+#### MacOS/Linux
+
+```bash
+open reports/test_report.html
+```
+
+### **How to run the tests locally**
+
+1. Clone the repository to your local machine using the following command:  
+
+```bash
+
+git clone git@github.com:choushen/py-sdet-challenge-2.git
+
+```
+
+2. Navigate to the project directory:  
+
+```bash
+
+cd py-sdet-challenge-2
+
+```
+
+3. Install the required dependencies:  
+
+```bash
+
+pip install -r requirements.txt
+
+```
+
+4a. Unzip the **secrets_pt_2.zip** file and place the .env file in the root of the project diretory. Next go to https://airportgap.com/tokens/new and generate yourself a token. Open the .env file that you should have added to the root of the project directory and add the token string to the .env file as shown below:  
+
+```bash
+AUTH_TOKEN=<your_token_here>
+```
+
+4b. Drop the resources folder into the project directory.  It should contain 3 files:
+- airport_data.json
+- api_endpoints.json
+- favourites.json
+
+
+5. Run the tests:  
+
+```bash
+
+pytest --html=reports/test_report.html
+
+```
+
+6. View the test report:
+
+#### Windows
+
+```bash
+
+Start-Process reports\test_report.html
+
+```
+
+#### MacOS/Linux
+
+```bash
+
+open reports/test_report.html
+
+```
 
 ## **Trouble Shooting Guide**
 
@@ -114,6 +233,7 @@ If after following the setup instructions you encounter any issues, please go to
   - Adding an invalid airport to a favourite list
   - Token expiration handling (e.g. 401 status code)
   - Improve a comprehensive list of my postman test collection
+- Generate a token using the API
 
 ### Non-Functional Requirements
 
@@ -127,5 +247,5 @@ If after following the setup instructions you encounter any issues, please go to
 
 ## **Author**  
 
-**Name:** Jacob McKenzie
-**Email:** jacob.mckenzie@icloud.com
+- **Name:** Jacob McKenzie
+- **Email:** jacob.mckenzie@icloud.com
