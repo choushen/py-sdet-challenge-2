@@ -210,7 +210,7 @@ open reports/test_report.html
 
 ```
 
-## **Trouble Shooting Guide**
+## **Troubleshooting Guide**
 
 Any issues common issues you may encounter/what I encountered and how I resolved them will be included in this section of the document.
 
