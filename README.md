@@ -129,4 +129,3 @@ If after following the setup instructions you encounter any issues, please go to
 
 **Name:** Jacob McKenzie
 **Email:** jacob.mckenzie@icloud.com
-
