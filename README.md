@@ -113,6 +113,7 @@ If after following the setup instructions you encounter any issues, please go to
   - Boundary testing
   - Adding an invalid airport to a favourite list
   - Token expiration handling (e.g. 401 status code)
+  - Improve a comprehensive list of my postman test collection
 
 ### Non-Functional Requirements
 
