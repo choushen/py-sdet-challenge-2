@@ -110,7 +110,9 @@ cd py-sdet-challenge-2
 AUTH_TOKEN=<your_token_here>
 ```
 
-3b. Drop the resources folder into the project directory.  It should contain 3 files:
+3b. Open the **secrets_pt_2** folder.
+
+Drop the resources folder into the project directory.  It should contain 3 files:
 
 - airport_data.json
 - api_endpoints.json
