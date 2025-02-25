@@ -87,12 +87,11 @@ You'll also need a couple of other things installed on your machine. See below f
 
 ### **How to run the tests using Docker**
 
-
 1. Clone the repository to your local machine using the following command:  
 
 ```bash
 
-git clone
+git clone git@github.com:choushen/py-sdet-challenge-2.git
 
 ```
 
