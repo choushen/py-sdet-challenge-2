@@ -128,7 +128,7 @@ docker build -t sdet_challenge .
 5. Run the docker container:  
 
 ```bash
-docker run --env-file .env -v ${PWD}/reports:/app/reports sdet_challenge pytest --html=reports/test_report.html
+docker run --env-file .env -v ${PWD}/reports:/app/reports sdet_challenge
 ```
 
 6. View the test report:  
